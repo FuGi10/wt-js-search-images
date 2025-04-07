@@ -62,4 +62,4 @@ function apiService() {
   };
 }
 
-export default apiService();
+export default apiService(); 

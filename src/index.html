@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <title>Pagination</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="title">Пошук зображень</h1>
+            
+            <form class="search-form">
+                <input
+                  id="search-bar"
+                  type="text"
+                  name="searchQuery"
+                  autocomplete="off"
+                  placeholder="Що шукаємо?"
+                />
+                <button type="submit" id="search-button">
+                    <img class="search-icon" src="./images/search-glass.svg">
+                </button>
+              </form>
+        
+        </header>
+
+        <main>
+            <div class="gallery" aria-live="polite"></div>
+            <nav class="pagination-container is-hidden" id="pagination-container">
+                <button
+                    class="pagination-button"
+                    id="prev-button"
+                    title="Previous page"
+                    aria-label="Previous page">
+                    &lt;
+                </button>
+
+                <div id="pagination-numbers"></div>
+
+                <button
+                    class="pagination-button"
+                    id="next-button"
+                    title="Next page"
+                    aria-label="Next page">
+                    &gt;
+                </button>
+            </nav>
+
+        </main>
+
+        <script type="module" src="./js/pagination.js"></script>
+    </body>
+
+</html>

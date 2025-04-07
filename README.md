@@ -1,2 +1,1 @@
-# wt-js-search-images
- 
+

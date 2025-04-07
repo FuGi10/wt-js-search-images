@@ -7,4 +7,4 @@ let lightbox = new SimpleLightbox('.photo-card a', {
   captionDelay: 250,
 });
 
-export { lightbox };
+export { lightbox }; 
